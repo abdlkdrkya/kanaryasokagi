@@ -1,0 +1,294 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#swiperThumbs .swiper-slide-thumb-active {
+  opacity: 1;
+  filter: none;
+}
+html,
+body {
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+#profile{
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  display: block;
+  object-fit: cover;
+}
+
+#mobileButton{
+  transform: scaleY(0);
+  transition: transform 0.26s ease;
+  display: none;
+}
+#mobileButton.hide{
+  display:block;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(1);
+}
+#mobileButton2{
+  transform: scaleY(0);
+  transition: transform 0.26s ease;
+  display: none;
+}
+#mobileButton2.hide{
+  display:block;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(1);
+}
+#mobileButton3{
+  transform: scaleY(0);
+  transition: transform 0.26s ease;
+  display: none;
+}
+#mobileButton3.hide{
+  display:block;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(1);
+}
+#menu {
+  width: 0;
+  transition: width 0.1s linear;
+  visibility: hidden;
+}
+
+#menu.hide {
+  visibility: visible;
+  padding: 0;
+  width: 60%;
+  height: 100vh;
+  transition: width 0.1s linear;
+}
+#border-1 {
+  border: 4px solid #12326e;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 200px) {
+  #anaSayfaYanHaber {
+    height: 7.2rem;
+  }
+  #normalAltHaber {
+    height: 16rem;
+  }
+  #istatistikAltHaber {
+    height: 12rem;
+  }
+  #swiperHaber {
+    height: 40vh;
+  }
+  #navi-computer {
+    display: none;
+  }
+  #navi-mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 440px) {
+  #anaSayfaYanHaber {
+    height: 7.2rem;
+  }
+  #normalAltHaber {
+    height: 20rem;
+  }
+  #istatistikAltHaber {
+    height: 15rem;
+  }
+  #swiperHaber {
+    height: 35vh;
+  }
+  #navi-computer {
+    display: none;
+  }
+  #navi-mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 640px) {
+  #anaSayfaYanHaber {
+    height: 7.2rem;
+  }
+  #normalAltHaber {
+    height: 24rem;
+  }
+  #istatistikAltHaber {
+    height: 20rem;
+  }
+  #swiperHaber {
+    height: 35vh;
+  }
+  #navi-computer {
+    display: none;
+  }
+  #navi-mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #anaSayfaYanHaber {
+    height: 7.2rem;
+  }
+  #normalAltHaber {
+    height: 10rem;
+  }
+  #istatistikAltHaber {
+    height: 16.4rem;
+  }
+  #navi-computer {
+    display: none;
+  }
+  #navi-mobile {
+    display: block;
+  }
+  #swiperHaber {
+    height: 40vh;
+  }
+  #macIstatistikYanHaber {
+    height: 9rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #swiperHaber {
+    height: 40vh;
+  }
+  #anaSayfaYanHaber {
+    height: 7.2rem;
+  }
+  #normalAltHaber {
+    height: 11rem;
+  }
+  #istatistikAltHaber {
+    height: 13.4rem;
+  }
+  #macIstatistikYanHaber {
+    height: 10rem;
+  }
+  #navi-computer {
+    display: block;
+  }
+  #navi-mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #swiperHaber {
+    height: 50vh;
+  }
+  #anaSayfaYanHaber {
+    height: 10.5rem;
+  }
+  #normalAltHaber {
+    height: 14rem;
+  }
+  #istatistikAltHaber {
+    height: 16.3rem;
+  }
+  #macIstatistikYanHaber {
+    height: 14.5rem;
+  }
+  #navi-computer {
+    display: block;
+  }
+  #navi-mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #swiperHaber {
+    height: 50vh;
+  }
+  #anaSayfaYanHaber {
+    height: 10.7rem;
+  }
+  #normalAltHaber {
+    height: 15rem;
+  }
+  #istatistikAltHaber {
+    height: 18rem;
+  }
+  #macIstatistikYanHaber {
+    height: 15.4rem;
+  }
+  #navi-computer {
+    display: block;
+  }
+  #navi-mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #swiperHaber {
+    height: 50vh;
+  }
+  #anaSayfaYanHaber {
+    height: 13.7rem;
+  }
+  #normalAltHaber {
+    height: 16rem;
+  }
+  #istatistikAltHaber {
+    height: 19rem;
+  }
+  #macIstatistikYanHaber {
+    height: 16rem;
+  }
+  #navi-computer {
+    display: block;
+  }
+  #navi-mobile {
+    display: none;
+  }
+}
+#apo p {
+  font-family: Poppins, sans-serif;
+  font-size: medium;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#apo h2 {
+  font-family: Poppins, sans-serif;
+  color: #12326e;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#apo h3 {
+  font-family: Poppins, sans-serif;
+  color: #12326e;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#apo a {
+  color: #12326e;
+  font-weight: 700;
+}
+#apo a:hover {
+  font-size: larger;
+}
+#insta {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #fccc63 0, #fbad50 50%, #cd486b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
